@@ -171,12 +171,18 @@ $$
 ### 引用
 
 ```markdown
-> 枪响，雷鸣，剑起。繁花血景。
+>[!tip] 枪响，雷鸣，剑起。繁花血景。
 ```
 
 预览：
 
 > 枪响，雷鸣，剑起。繁花血景。
+
+import { Aside } from 'astro-pure/user'
+
+<Aside>No type selected will default to 'note'. 😉</Aside>
+<Aside type="tip">
+Other content is also supported in aside! 😍
 
 引用里也可以继续嵌套语法。
 
