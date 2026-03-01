@@ -22,6 +22,8 @@ import {
 } from './src/plugins/shiki-official/transformers.ts'
 import config from './src/site.config.ts'
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
   // [Basic]
@@ -35,7 +37,7 @@ export default defineConfig({
 
   // [Adapter]
   // https://docs.astro.build/en/guides/deploy/
-  adapter: vercel(),
+  adapter: netlify(),
   output: 'server',
   // Local (standalone)
   // adapter: node({ mode: 'standalone' }),
