@@ -1,0 +1,135 @@
+---
+title: '伊始'
+publishDate: 'March 3, 2026'
+updatedDate: 'March 3, 2026'
+description: '一生二 二生三 三生万物'
+tags:
+  - Example
+  - Mind
+  - Mood
+language: 'Chinese'
+heroImage: { src: './fzd.png', color: '#9698C1' }
+---
+import { Aside } from 'astro-pure/user'
+import { Card } from 'astro-pure/user'
+import { Timeline } from 'astro-pure/user'
+import { Tabs } from 'astro-pure/user'
+import { Collapse } from 'astro-pure/user'
+import { Icon } from 'astro-pure/user'
+
+# 想要写点什么
+从刚上大一开始，就想写点什么，记录一下大学生活，记录一下自己的成长，记录一下自己的心路历程。可是每次想写的时候，总是觉得没有什么可写的，或者说没有什么值得写的。感觉自己过得很平淡，没有什么特别的经历，也没有什么特别的感受。
+说到底还是缺乏执行力。我自己很喜欢看b站小约翰可汗的视频。小约翰制作了一个“硬核狠人”的系列节目，这些狠人出身不同、秉性各异，却都在不同的方面
+整出了各种硬核狠活。如果说要寻找他们身上的共同点，恐怕唯一的答案便是**执行力超强** 。
+
+现在是2026年3月份，大学的时光已经过了一半大多，每个人也都为自己未来而焦虑着、行动着。所以我开这个博客的初心，大概就是记录可能到来的考研备考时光，借此督促自己专心备考。
+
+# 数学公式
+## 行内公式
+行内公式：$a^2 + b^2 = c^2$
+
+行间公式：
+$$E = mc^2$$
+
+## 代码块
+```python
+def hello_world():
+    print("Hello, world!")
+```
+
+```cpp
+#include <iostream>
+int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+```
+## 引用
+> 这是一个引用示例。
+
+## 无序列表
+- 项目一
+- 项目二
+- 项目三
+
+## 有序列表
+1. 第一项
+2. 第二项
+3. 第三项
+
+## Aside
+<Aside type='tip' title='这是一个提示'>
+  这是一个提示内容，可以用来强调重要信息或者提供额外的背景知识。
+</Aside>
+
+<Aside type='danger' title='这是一个警告'>
+  这是一个警告内容，提醒读者注意潜在的风险或者错误。
+</Aside>
+
+<Aside type='note' title='这是一个信息'>
+  这是一个信息内容，提供有用的提示或者建议。
+</Aside>
+
+<Aside type='caution' title='这是一个小心'>
+  这是一个小心内容，提醒读者注意潜在的问题或者需要谨慎处理的地方。
+</Aside>
+
+## Card
+
+<Card
+  as='a'
+  href='#card'
+  heading='Lorem ipsum'
+  subheading='Lorem ipsum dolor sit amet, vidit suscipit at mei.'
+  date='August 2021'
+>
+  You can even contain a list here
+</Card>
+
+
+## Timeline
+<Timeline
+  events={[
+    {
+      date: '2023-01-01',
+      content: '<p>项目启动</p>',
+    },
+    {
+      date: '2023-02-01',
+      content: '<p>开发阶段开始</p>',
+    },
+    {
+      date: '2023-03-01',
+      content: '<p>测试阶段开始</p>',
+    },
+    {
+      date: '2023-04-01',
+      content: '<p>上线</p>',
+    },
+  ]}
+/>
+
+## Tabs
+<Tabs syncKey="projectTabs">
+  ## Tab 1
+  Content for Tab 1.
+
+  ## Tab 2
+  Content for Tab 2.
+
+  ## Tab 3
+  Content for Tab 3.
+</Tabs>
+
+## Collapse
+<Collapse title="点击展开" class="custom-class">
+  <div slot="before">这是展开前的内容。</div>
+  <p>这里是展开后的内容，点击标题后可以显示它。</p>
+</Collapse>
+
+## Icon
+
+<Icon name="home" color="blue" size="2em" label="Home" />
+<Icon name="settings" color="gray" size="1.5em" />
+<Icon name="search" size="1.2em" />
+
